@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OCT Digital Library</title>
+	<link rel="stylesheet" type="text/css" href="/css/screen.css">
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>OCCIDENTAL CHILDREN'S THEATER</h1>
+            <h1>DIGITAL LIBRARY</h1>
+        </header>
+
+
+        <nav class="add-story">
+            <ul>
+                <li><a target="_blank" href="https://goo.gl/forms/w0n1MbcLYucNveur2">Click here to add a story</a></li>
+            </ul>
+        </nav>
+
+        <div class="advanced-search">
+            <form action="/" method="get">
+                <p>Title</p><input type="text" name="title"><br>
+                <p>Origin</p><input type="text" name="origin"><br>
+                <p>Book</p><input type="text" name="book"><br>
+                <input type="submit" value="Submit"><br>
+            </form>
+        </div>
+
+         <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Origin</th>
+                    <th>Book</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for story in query_results %}
+                <tr>
+                    <td><a target="_blank" href="{{ story[-1] }}">{{ story[0] }}</a></td>
+                    <td>{{ story[1] }}</td>
+                    <td>{{ story[2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <footer>
+            <p>&copy; 2017 Occidental Children's Theater. Web Design by Sarah Greilsamer.</p>
+        </footer>
+
+    </div>
+
+</body>
+
+
+</html>

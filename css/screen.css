@@ -1,0 +1,133 @@
+/* orange color #ff751a*/
+
+/* Styling the entire page */
+
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
+/* Header */
+
+header h1 {
+	text-align: center;
+	color: black;
+}
+
+
+/* Add Story Button */
+
+.add-story {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.add-story ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.add-story li {
+	list-style: none;
+}
+
+.add-story a {
+	text-decoration: none;
+	padding: 10px 20px;
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+	background-color: black;
+	color: white;
+	font-size: 125%;
+}
+
+.add-story a:hover {
+	background-color: #ff751a;
+}
+
+/* Search Story Fields */
+
+.advanced-search {
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: 125%;
+	width: 100%;
+}
+
+form {
+	/*background-color: #d6dcdc;*/
+	background-image: url(../images/dracula3.png);
+	padding: 30px 40px;
+}
+
+input[type="text"] {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	height: 40px;
+}
+
+form p {
+	font-size: 125%;
+	color: black;
+}
+
+/* Table */
+
+table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table th {
+	text-align: left;
+	font-weight: bolder;
+	font-size: 125%;
+	background-color: black;
+	color: white;
+}
+
+table th,
+table td {
+	border: 0.5px solid #d6dcdc;
+	padding: 8px;
+}
+
+table tbody tr:nth-child(even) td {
+	background-color: #F2F4F4;
+}
+
+table tbody tr td a {
+	text-decoration: none;
+	color: black;
+}
+
+table tbody tr td a:hover {
+	text-decoration: none;
+}
+
+table tbody tr:nth-child(even) td a:hover {
+	background-color: #ff751a;
+}
+
+table tbody tr:nth-child(odd) td a:hover {
+	background-color: #ff751a;
+}
+
+/* Footer */
+
+footer {
+	font-size: 85%;
+	color: black;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
